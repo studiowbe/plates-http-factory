@@ -20,7 +20,7 @@
        new \Http\Factory\Guzzle\ResponseFactory()      //a psr-17 compatible response factory
    );
    
-   //rendering the template at /path/to/templates/pages/home with additional data
+   //rendering the template at /path/to/templates/pages/home.php with additional data
    $response = $factory->createResponse(
        'pages/home',
        ['title'=>'home']
