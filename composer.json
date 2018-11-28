@@ -1,0 +1,33 @@
+{
+  "name": "studiow/plates-http-factory",
+  "description": "Plates adapter for PSR-7 HTTP message factories",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Willem Wollebrants",
+      "email": "willem@studiow.be",
+      "homepage": "http://studiow.be"
+    }
+  ],
+  "require": {
+    "psr/http-factory": "^1.0",
+    "league/plates": "^3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Studiow\\Plates\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Studiow\\Plates\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "cs": "php-cs-fixer fix"
+  }
+}
